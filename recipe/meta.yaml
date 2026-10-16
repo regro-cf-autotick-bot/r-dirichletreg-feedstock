@@ -1,4 +1,4 @@
-{% set version = "0.7-2" %}
+{% set version = "0.7-3" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/DirichletReg_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/DirichletReg/DirichletReg_{{ version }}.tar.gz
-  sha256: 088b4c8cf4c87e661c741a87791f8bbbbe55175d76d4ed0a7b24e7fe76782d9b
+  sha256: 472cb97b824c29de13b7cddf8c3b801b1bf63e3631e7100c8ca6cfd82653e2ab
 
 build:
-  number: 1
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
